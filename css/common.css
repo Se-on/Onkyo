@@ -158,9 +158,8 @@ a.button4{
 	text-transform: uppercase;
 	width: 200px;
 	height: 50px;
-	border-bottom: #2B3D52 2px double;
-	border-radius: 15px;
-  background-color:#EDEDED;
+	border-bottom: 2px double #2B3D52 ;
+ 	background-color:#EDEDED;
   color: #2B3D52;
 	font-size: 16px;
 	cursor: pointer;

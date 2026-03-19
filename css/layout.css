@@ -349,13 +349,14 @@ main #visual-wrap .mainpage p.maintext{
   color: #fff;
 }
 
+.swiper-pagination-horizontal{display: none;}
+
 .slide-info .item-color .select-color1{background-color: #777;}
 .slide-info .item-color .select-color2{background-color: #111;}
 
 .slide-item a>span{
   padding-top: 10px;
   width: 296px;
-  background-color: #fff;
   text-align: center;
   background: url(../img/item-img.png) no-repeat center/cover;
 }
@@ -371,6 +372,7 @@ main #visual-wrap .mainpage p.maintext{
   width: 12px;
   margin: 0px 10px;
   color: #000;
+  z-index: 101;
 }
 
 /* ----------------------------------------------- */
@@ -676,7 +678,6 @@ footer{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 80px;
   padding-bottom: 80px;
   background-color: #2B3D52;
 }
