@@ -1,4 +1,4 @@
-body{font-family: 'Inria Serif'}
+body{font-family: 'Inria Serif';}
 
 header{
   position: fixed;
@@ -110,8 +110,9 @@ header{
 }
 
 
-
 /* ----------------------------------------------------------------- MAIN */
+
+main #visual-wrap{margin: 0 auto;}
 
 main #visual-wrap .textlogo .visual h3{
   text-align: center;
@@ -129,9 +130,7 @@ main #visual-wrap .textlogo .visual p{
   font-weight: 600;
   word-break: keep-all;
   line-height: 18px;
-  word-spacing: -2%;
   text-align: center;
-  width: 82.222%;
 }
 
 main #visual-wrap .mainpage{
@@ -182,9 +181,8 @@ main #visual-wrap .mainpage p.maintext{
   text-align: center;
   margin-bottom: 40px;
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 18px;
-  width: 82.222%;
 }
 
 #introduce .introduce-icon{
@@ -236,14 +234,19 @@ main #visual-wrap .mainpage p.maintext{
   width: 82.222%;
   height: 80%;
   padding-bottom: 80px;
+  margin: 0 auto;
 }
 
 #recom-slide{
+  width: 100%;
   height: 821px;
   position: relative;
   background: url(../img/background1.png) repeat center/cover;
   margin-top: 80px;
 }
+
+#recom-slide .section2-left{position: static;}
+#recom-slide .section2-right{position: static;}
 
 #recom-slide .section2-left .s2info{
   padding-top: 80px;
@@ -281,16 +284,17 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #recom-slide .section2-left a.button1{display: none;}
+
 #recom-slide .recom-wrap .section2-right a.button3{display: inline-block;}
 
 #recom-slide .section2-right .s2item{
-  width: 82.222%;
-  height: 380px;
+  width: 296px;
+  height: 360px;
 }
 
 #recom-slide .section2-right .s2item .slide-item{
-  width: 296px;
-  height: 380px;
+  width: 100%;
+  height: 360px;
   font-size: 80px;
   background-color: #fff;
 }
@@ -301,8 +305,8 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #recom-slide .section2-right .item-slide a{
-  width: 296px;
-  height: 380px;
+  width: 100%;
+  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,6 +315,7 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #recom-slide .section2-right .item-slide .slide-info{
+  width: 82.222%;
   color: #000;
   text-align: center;
   margin-top: 50px;
@@ -322,21 +327,19 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #recom-slide .section2-right .item-slide .slide-info>p{
-  width: 82.222%;
   font-size: 16px;
-  font-weight: 300;
   line-height: 120%;
-  margin-top: 6px;
+  margin-top: 5px;
   word-break: keep-all;
+  width: 100%;
 }
 
 #recom-slide .section2-right .item-slide .slide-info .item-color{
-  width: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
   gap: 10px;
 }
 
@@ -356,30 +359,35 @@ main #visual-wrap .mainpage p.maintext{
 
 .slide-item a>span{
   padding-top: 10px;
-  width: 296px;
-  text-align: center;
+  width: 298px;
+  height: 100px;
   background: url(../img/item-img.png) no-repeat center/cover;
 }
 
 .slide-item a>span:nth-child(2){
-  text-align: center;
-  background-color: #fff;
+  padding-top: 10px;
+  width: 298px;
+  height: 100px;
   background: url(../img/item-img2.png) no-repeat center/cover;
 }
 
-#recom-slide .section2-right .swiper-button-next,
-#recom-slide .section2-right .swiper-button-prev{
+#recom-slide .swiper-button-next,
+#recom-slide .swiper-button-prev{
   width: 12px;
-  margin: 0px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0px -5px;
   color: #000;
   z-index: 101;
 }
 
+
 /* ----------------------------------------------- */
+
+#recom-item{width: 100%;}
 
 #recom-item .section3-wide{
   text-align: center;
-
 }
 
 #recom-item .section3-wide .s3text{
@@ -413,7 +421,6 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #recom-item .section3-wide .s3text p{
-  width: 50%;
   margin-top: 10px;
   margin-bottom: 50px;
   font-size: 16px;
@@ -423,17 +430,19 @@ main #visual-wrap .mainpage p.maintext{
   line-height: 120%;
 }
 
+#recom-item .section3-wide .s3banner-1, #recom-item .section3-wide .s3banner-2{
+  display: inline-block;
+  width: 82.222%;}
+
 #recom-item .section3-wide .s3banner-1 .s3img-1{
   margin-top: -30px;
-  width: 82.222%;
-  min-width: 300px;
-  max-width: 100%;
+  width: 100%;
   height: 300px;
   background: url(../img/s4-1.jpg) no-repeat center/cover;
 }
 
 #recom-item .section3-wide .s3banner-2 .s3img-2{
-  width: 82.222%;
+  width: 100%;
   min-width: 300px;
   max-width: 100%;
   height: 300px;
@@ -500,7 +509,6 @@ main #visual-wrap .mainpage p.maintext{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 60%;
 }
 
 #wide-banner .section4-wide{
@@ -531,6 +539,7 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #wide-banner .section4-text p{
+  width: 82.222%;
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 200;
@@ -542,7 +551,6 @@ main #visual-wrap .mainpage p.maintext{
 /* ----------------------------------------------------------------- CES2025 */
 
 #ces2025 .section5-text{
-  width: 82.222%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -567,9 +575,9 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #ces2025 .section5-text p{
-  width: 80%;
+  width: 82.222%;
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   word-break: keep-all;
   line-height: 18px;
   text-transform: capitalize;
@@ -591,19 +599,22 @@ main #visual-wrap .mainpage p.maintext{
 /* ----------------------------------------------------------------- NEWSLETTER */
 
 #newsletter{
-  background: url(../img/background2.png) repeat center/contain;
+  width: 100%;
+  display: inline-block;
 }
 
-.newsletter-wrap{
-  width: 82.22%;
+#newsletter .newsletter-wrap{
   text-align: center;
+  width: 100%;
+  background: url(../img/background2.png) repeat center/cover;
 }
 
  #newsletter .section6-text p{
-  width: 80%;
+  width: 82.222%;
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   word-break: keep-all;
+  margin: 0 auto;
   padding-bottom: 50px;
   line-height: 18px;
   text-transform: capitalize;
@@ -616,17 +627,14 @@ main #visual-wrap .mainpage p.maintext{
 #newsletter .section6-article{
   display: grid;
   grid-auto-rows: 1fr;
-  grid-auto-columns: repeat(150px);
-  grid-area: auto;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  align-items: center;
 }
 
 #newsletter .section6-article .s6-art{
   font-family: "inter";
   text-transform: uppercase;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #aaa;
   text-align: center;
   width: 82.222%;
   padding: 25px 10px;
@@ -640,7 +648,7 @@ main #visual-wrap .mainpage p.maintext{
 }
 
 #newsletter .section6-article .s6-art h5{
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: bold;
   margin: 15px 0px;
@@ -654,7 +662,7 @@ main #visual-wrap .mainpage p.maintext{
 
 #newsletter .section6-article .s6-art a i{
   color: #2B3D52;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 24px;
 }
 
@@ -719,7 +727,7 @@ footer .foot-sns .insta:hover, footer .foot-sns .face:hover{
 }
 
 footer .foot-sitemap a{
-  line-height: 120%;
+  line-height: 140%;
   word-wrap: break-word;
   font-size: 16px;
   color: #fff;
@@ -756,3 +764,5 @@ footer address p{
   line-height: 150%;
   font-style: normal;
 }
+
+footer address br{display:none;}

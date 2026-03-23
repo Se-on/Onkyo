@@ -190,6 +190,7 @@
             <a href="#" class="button3">View More Item</a>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -331,7 +332,9 @@ and forward-thinking audio innovation converge.</p>
   <!-- <script src="js/slide.js"></script> -->
 
   <script>
+
   const swiper = new Swiper('.swiper', {
+
     slidesPerView: 1,
     speed: 400,
     spaceBetween: 100,
@@ -339,25 +342,29 @@ and forward-thinking audio innovation converge.</p>
 
     pagination: {
     el: '.swiper-pagination',
-  },
+    type: "progressbar",},
 
     navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    prevEl: '.swiper-button-prev',},
 
     breakpoints: {
       768: {
         slidesPerView: 'auto',
         centeredSlides: true,
+        spaceBetween: 100,
             },
       1024: {
-         slidesPerView: 'auto',
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        spaceBetween: 50,
           },
-      1920: {
-          slidesPerView: 'auto',
+      1440: {
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 50,
       }
-  },
+    },
 });
 
   </script>
