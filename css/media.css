@@ -374,7 +374,13 @@ main #visual-wrap .mainpage p.maintext{
   margin-bottom: 50px;
 }
 
-#ces2025 .section5-text b{
+#ces2025 .section5-text div{
+  display: inline-block;
+  width: 100%;
+  height: 375px;
+}
+
+#ces2025 .section5-text div>b{
   display: inline-block;
   background: url(../img/s5img.png) no-repeat center/cover;
   width: 86.458%;
@@ -1066,7 +1072,11 @@ main #ces2025{
   margin-bottom: 50px;
 }
 
-#ces2025 .section5-text b{
+#ces2025 .section5-text div{
+  display: none;
+}
+
+#ces2025 .section5-text div>b{
   display: none;
 }
 
@@ -1652,7 +1662,11 @@ main #ces2025{
   margin-bottom: 80px;
 }
 
-#ces2025 .section5-text b{
+#ces2025 .section5-text div{
+  display: none;
+}
+
+#ces2025 .section5-text div>b{
   display: none;
 }
 
